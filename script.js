@@ -11,16 +11,16 @@ const getSum = () => {
             totalAmount+=Number(item.textContent)
          })
     const table=document.querySelector(table)
-    const newRow=document.createElememt("tr")
+    const newRow=document.createElement("tr")
 	
-const cell1=document.createElememt("td")
+const cell1=document.createElement("td")
 	cell1.textcontent="Total"
 	
 	
-const cell2=document.createElememt("td")
+const cell2=document.createElement("td")
 	cell2.textcontent= totalAmount;
 	newRow.appendChild(cell1)
-	newRow.appebdChild(cell2)
+	newRow.appendChild(cell2)
 	
 	
 
