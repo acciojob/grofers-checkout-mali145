@@ -13,14 +13,12 @@ const getSum = () => {
     const table=document.querySelector("table")
     const newRow=document.createElement("tr")
 	
-const cell1=document.createElement("td")
-	cell1.textContent="Total"
+
 	
-	
-const cell2=document.createElement("td")
-		cell2.textContent= totalAmount;
-	newRow.appendChild(cell1)
-	newRow.appendChild(cell2)
+const cell=document.createElement("td")
+		cell.textContent= totalAmount;
+	newRow.appendChild(cell)
+	//newRow.appendChild(cell2)
 	
 	
 
@@ -33,5 +31,5 @@ const cell2=document.createElement("td")
 };
 getSum();
 
-getSumBtn.addEventListener("click", getSum);
+//getSumBtn.addEventListener("click", getSum);
 
