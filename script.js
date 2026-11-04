@@ -4,21 +4,21 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	 let itemsPrice=document.querySelectorAll(".price")
+	 let itemsPrice=document.querySelectorAll(".prices")
         let totalAmount=0
          itemsPrice.forEach((item)=>{
             //console.log(item.textContent)
             totalAmount+=Number(item.textContent)
          })
-    const table=document.querySelector("table")
+    const table=document.querySelector(table)
     const newRow=document.createElement("tr")
 	
 const cell1=document.createElement("td")
-	cell1.textContent="Total"
+	cell1.textcontent="Total"
 	
 	
 const cell2=document.createElement("td")
-		cell2.textContent= totalAmount;
+	cell2.textcontent= totalAmount;
 	newRow.appendChild(cell1)
 	newRow.appendChild(cell2)
 	
@@ -31,6 +31,7 @@ const cell2=document.createElement("td")
 
   
 };
+getSum()
 
 getSumBtn.addEventListener("click", getSum);
 
